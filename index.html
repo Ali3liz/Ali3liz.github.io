@@ -1,10 +1,77 @@
 <html>
 <head>
-<title>Liz's HTML Project</title>
-</head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
 
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: black;color:white;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
 <body>
-<h1>HTML is pretty swanky to work with (:</h1> 
+
+<div class="flex-container">
+<header>
+  <h1>Digital Advancements</h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="#">Universal</a></li>
+  <li><a href="#">Communitive</a></li>
+  <li><a href="#">Language</a></li>
+</ul>
+</nav>
+
+<article class="article">
+  <h1>Programming</h1>
+  <p>Programming is a universal language in which many people rely on for communication.</p>
+  <p>It also happens to run a neccessity to most people this day in age, which is technology. Sometimes, a program could go a lot farther than humane language.</p>
+  <p><strong>You never know where it'll take human advancment!</strong></p>
+
+  <h2>Life-like Robotics</h2>
+  <p> Robotic advancements have come a long way since the eary 2000's. Mainly focusing on health-care, there are machines being developed to act as nurses for over staffed halways.<p>
+  <p> Also, within the past five years, there have been machines that can virtually breath of a patient in a comatose state.</p>  
+  <p> Aside from nursing, there are Google task robots such as "Alexa", who now are devloping into physical beings (artificial beings of course)</p>
+  
+  <h3> 
+  <p>
+  <p>
+  <p>  
+  </article>
+
+<footer>Copyright &copy; W3Schools.com</footer>
+</div>
 
 </body>
 </html>
